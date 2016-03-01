@@ -1,0 +1,13 @@
+
+MVP:
+	search omdb.com for a movie (by title, likely)	
+	return the URL & make an API request with input
+	use t for title in get request
+	display response nicely
+	if not found (Response=False)
+		reply not found / try again / etc.
+	else Response=True
+		display result
+
+EXTRA:
+	make it a search result, instead of the top search result
