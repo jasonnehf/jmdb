@@ -117,3 +117,9 @@ select,input {
 	color:white;
 	font-size:smaller;
 }
+
+.note {
+	color:white;	
+	font-size:smaller;
+	margin-top:3em;
+}
