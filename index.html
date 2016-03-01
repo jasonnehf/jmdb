@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>JMDB : JaSON Movie Database (c/o OMDBapi.com)</title>
+	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+	<div class="bg-container grid">
+	<div class="grid__col grid__col--9-of-12 grid__col--centered page-header grid">
+	<div class="grid__col grid__col--1-of-2 header-container"><h1>jMDB</h1>
+		<span>A Movie Database Engine, for when IMDB is just tooooo dang fancy.</span>
+	</div>
+	<div class="grid__col grid__col--1-of-2 search-container">
+	<div class="searchoptions hidden">
+		<input id="searchyear" placeholder="Year" type="number" min="1900">
+		<select id="searchtype">
+	  		<option value="movie" selected>Movie</option> 
+	  		<option value="series" >TV Series</option>
+	  		<option value="episode">TV Episode</option>
+		</select>
+		
+	</div>
+	<i class="fa fa-caret-left" id="toggleoptions"></i>
+	<i class="fa fa-lg fa-search" id="searchbtn"></i><input type="text" id="searchbox" placeholder="Search title..."/></div>
+	</div>
+	<div class="grid__col grid__col--9-of-12 grid__col--centered main-container grid">
+	<div class="grid__col--1-of-2 grid__col output-container" id="table-container">
+		Search for something via the box in the upper-right!
+	</div>
+	<div class="grid__col--1-of-2 grid__col output-container" id="poster-container"></div>
+	</div>
+		
+
+
+	</div>
 	
 </body>
 </html>
