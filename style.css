@@ -123,3 +123,9 @@ select,input {
 	font-size:smaller;
 	margin-top:3em;
 }
+
+.fa-caret-left, .fa-caret-right
+{
+	font-size:75%;
+	text-transform:uppercase;
+}
